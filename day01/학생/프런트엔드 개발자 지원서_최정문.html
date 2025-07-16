@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .info {
+            width: 600px;
+            height: 1000px;
+            border: 1px solid black;
+            padding: 20px;
+            font-family: 'Song Myung', serif;
+        }
+        .info li {
+            line-height: 3em;
+        }
+        .title {
+            width: 600px;
+            height: 200px;
+            /*border: 1px solid black;*/
+        }
+        .personal_info {
+            width: 600px;
+            height: 200px;
+            /*border: 1px solid plum;*/
+        }
+        .part {
+            width: 600px;
+            height: 200px;
+            /*border: 1px solid blue;*/
+        }
+        .motivate {
+            width: 600px;
+            height: 200px;
+            /*border: 1px solid purple;*/
+        }
+        .motivate textarea{
+            width: 100%;
+            height: 100px;
+            
+        }                  
+        .btn {
+            width: 600px;
+            height: 100px;
+            /*border: 1px solid green;*/
+            text-align: center;          
+        }
+
+    </style>
+</head>
+<body>
+    <div class="info">
+
+        <div class="title">
+            <h1>프런트엔드 개발자 자원서</h1>
+            <br>
+            <br>
+            <P>HTML,CSS,java script 에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</P>
+            <hr>
+        </div>
+        
+        <div class="personal_info">
+            <h2>개인정보</h2>
+            <ul>
+                <li>이름&nbsp;&nbsp;<input type="text" placeholder="공백없이 입력하세요"/></li>
+                <li>연락처&nbsp;&nbsp;<input type="text"/></li>
+            </ul>      
+        </div>
+        
+        <div class="part">
+            <h2>지원분야</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="option1" name="option" value="1">
+                    <label for="option1">웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="option" value="2">
+                    <label for="option2">웹 애플리케이션 개발</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="option" value="3">
+                    <label for="option3">개발 환경 개선</label>
+                </li>
+            </ul>      
+        </div>
+        
+        <div class="motivate">
+            <h2>지원 동기</h2>
+            <textarea></textarea>
+        </div>
+        
+        <div class="btn">  
+            <input type="button" value="접수하기"/>
+            <input type="button" value="다시쓰기"/>
+        </div>
+    
+    </div>
+</body>
+</html>

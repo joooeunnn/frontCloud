@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대극천주문서</title>
+    <style>
+        .order_paper {  
+            display: flex;  
+            justify-content: center;  
+            border: 1px solid black;  
+            margin: 1px;  
+            padding: 50px;
+            width: 1400px;  
+            }
+        .good_info {  
+            width: 700px;  
+            height: 700px;  
+            border: 1px solid black;
+        }
+        .good_form {  
+            width: 700px;  
+            height: 700px;  
+            background-color: skyblue;  
+            border: 1px solid black;
+        }
+        .good_img{
+            width: 700px;  
+            height: 600px;  
+            background-color: red;  
+            border: 1px solid black;
+        }
+        .good_img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /*background-position: center;
+            background-size: cover; 이건 css 백그라운드일때*/
+        }
+        .good_ment{
+            width: 700px;  
+            height: 100px;   
+            border: 1px solid rgb(196, 12, 37);
+        }
+        .good_form{
+            width: 100%;
+            height: 700px;
+            display: flex;  
+            justify-content: center;  /* 가로 정렬 */
+            align-items: center;      /* 세로 정렬 */
+            border: 1px solid rgb(11, 235, 112);
+        }
+
+        .good_form_into{
+            width: 500px;
+            padding: 10px;
+            
+            border: 1px solid black;
+        }
+        .good_form_into input,select{
+            width: 100%;
+            
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+        }
+        .good_form_into button{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-top: 20px;
+
+            border: none;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!--주문서 겉껍질-->
+    <div class="order_paper">
+        <!--상품 인포-->
+        <div class="good_info">
+            <!--상품 그림-->
+            <div class="good_img">
+                <img src="https://shop-phinf.pstatic.net/20240804_220/1722734290592hkuEg_JPEG/3342374151958488_1283677526.jpg?type=m510" alt="사과">
+            </div>
+            <!--상품 설명-->
+            <div class="good_ment">
+                <h2>대극천 복숭아5KG/54,000원</h2>
+                <p>심쿵이네 한테서 뽀려옴</p>
+            </div>
+        </div>
+        <!--상품 주문서 폼-->
+        <div class="good_form">
+
+            <div class="good_form_into">
+                <h3>주문서</h3>
+                주문자 이름 <input type="text">
+                수량 
+                    <select>
+                        <option value="">수량</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                주문금액<input type="text">
+                전화번호<input type="text">
+                <button>주문하기</button>
+            </div>
+            
+        </div>    
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 클래스 선택자를 이용해서  원하는 영역 선택하기
+        
+
+        1)태그에 class 명 지정함 
+        2)특정 class명을 가진 요소를 선택함
+        3) css 스타일 적용
+
+        */
+
+        .wrap{
+            width: 400px;
+            /*height: 400px;*/
+            border:1px solid black;
+            padding: 20px;
+            margin:  0  auto;
+            margin-top: 100px;
+        } 
+
+        .image{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 0  auto;
+        }
+
+        .login-info{
+
+            width: 300px;
+           /* height: 100px; */
+            padding: 20px;
+            border: 1px solid rgb(240, 15, 15);
+            margin: 50px auto;
+
+        }
+
+       .login-info  input{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+
+       } 
+
+
+       .login-info  button{
+        width: 100%;
+        padding: 10px;
+
+       }
+
+
+       .image  img{
+         width: 100%;
+       }
+
+
+    </style>
+</head>
+<body> 
+    <div class="wrap" >
+        <!--이미지 영역-->
+        <div class="image"> 
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDQ4NEA8PDQ0PDg0PEA8ODw8PEA8RFRIWFxURExMaHSgsGBolHhUYJTEhJisrLjEuFx8zRDMsNyguLisBCgoKDg0OGhAQGi0fHR03MC0rListKystLSstLTcuLS0vLS0tLS0vLS03LS0tKystLTctKystKy0rLSsrKy0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQcCBQYEAwj/xABCEAACAgECAwQGBAsHBQAAAAAAAQIDBAUREiExBgdBURMiYXGBkRQVMlJCQ1NicoKSobHB8CNjc6KjssIWJCUzk//EABgBAQEBAQEAAAAAAAAAAAAAAAACAQQD/8QAIBEBAQACAgICAwAAAAAAAAAAAAECEQMSMUETIQQyUf/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbPDbrGLB7SyseD8pXVxf72B7gfHHy67FvXZXYvOE4z/geLtNqX0TT8zLX2qMa6yPtlGDcV89gOC7x+8qeLOWFgcM8iMvR23uPHGqf5OuP4U14vml02b324OV2twhLNln5MbF67h9Im5f/PZx/V/cY9ksTjsd1nryrS2cubdk93Kb9vX9o23aPPjVVCEpJO2yK5+EYvik/dy2+J4Z8t7zGOHk/Iy+WYYrR7utfs1DToXXpRya7J0X7JJOcNmpbeG8ZRe3m2dOcP3OwX1Ork+d+TlWyXk1P0aX7NcX8TuD3dwAAAAAAAAAAAAAAAAAAAAAAAAAABW/bfvSrxJPGwYRzMridcp83TXPpwrbnZLflsuXt35Hl7ze2NsrXo+C5ekltXkW1P1+KXTGra6S2frPwTS677ensb2LqwIQtsjGzM4ftbJwoX3K/wCcv5BuMuV1HLR7N63qy9JnZUsamXNVWb9P8COyXx5nvp7osVL18vIlLzhGqC+TTLF3IbJ29pxYxWmR3TcD48XPnXYujsr5/CcGtvkc/wBqsfXcbHdGRdfk4SacpV2SuhsnuuNv1tv0uRdDZzXbztH9XYUrY7O+1+ioi+a42m3JrySTfyXianLjx1tUPZ7tLDGruU4zsnOUZQ4eFJ8ttm/A8tluVqmT/ZUzumkoqumLlGuPX1pdI7+b2N93f9iXqEnmZLksRTlyXqyyZ7+tzX2Yp9WvHlyLlwcKqiuNVNcKao9IVxUYr4InpjMu3tz8f42Pbv7qqdM7stRlDad9OLF7Nw452S+Kitt/ibBd3Gp0Lix9RjxLmlGzIx/3rcs9GSZW3T8WKrl2s1/SGvpkHk0bpcV6U4P3Xw6Py4vkWT2N7dYmqR4YN0ZUVvPGsa40vGUH+HH2r4pHqlFSTjJKUZJpqSTTT6prxRWHbbsVLEktU01yp9DL0s6q+tTX42n83zj029nIbRlx2fcXcDk+7rthHVcTeXDDLp4Y31ro9/s2xX3ZbdPBpryb6w1AAAAAAAAAAAAAAAAAAABoO3Wu/V+m5GTHb02yqoT573TfDDl4pb8T9kWb8p7v21Vu/AwYvfhjZkzj5uW9dX8LPmGVh3UaJvCWpW7znKU40ynzbbb9Jc2+rbbW/sl5link0jCWNi4+MulNNcPe0vWfxe57CXVhj1mkMxDICg0farszRqVUKrnZD0c+OE6mlKLa2a5pppo3bICbNvNpmBXjUVY1S4aqoRhBN7vZeLfi31b9p6kQSGpJIAGSZl7OqMDJMCrNQploOs15tKccOyX9pCPT0E3tZDb81817o+0vCE1JKSe6aTTXRp9GV13i4StwePbnXNfszXC18+H5G87r9RlkaNiuTbnSp40m3u36KTjFt/oqPzKc+U1XVgAJAAAAAAAAAAAAAAAACg+8qfH2qrhLpGzTa/1W4v8A5svwoPvji8ftBVkbcpU4d6fm67JRa/0180GVb0upDIjNSSkucZJNPzT5oMh2MQAaIK/ydJ1b/qCOTGc/oHHD1vTL0UaVFKVTq3+03v4dWnuWAU72t13LwO0LunZc8eLqlClTlGuzHcEpRUeje/Fz80bHnnZNbbrUNI1eXaCF8ZW/QldVKM1alTChJcdbr36v1l0e7afusgqHRO12bqGvU+hnZXiub3x3s4Rx4x9aViX4Xt82kW8hTDV3pIAMWkmJAXUDU9sZJabkN9F6J/6sD4dzDf1flR8I6jkJe70dT/i2efvKv4dKtj423Yta9u90ZP8AdFns7m4/+KnP8pm5Ul7dnGO/+U2PDl/Z3QANQAAAAAAAAAAAAAAAAFV9/WjOzExs+K3eNZKqz/Dt22b90oxX65ah49Y06vLxrsW1b1X1zrlt1Sa+0vJrqvagOD7ttYWXplO73tx/+3sXj6q9SXxjt8mdQylOzebboWr24uTypclTe9nw7da70vLZ7+6TLqTTSaaaaTTXNNeaJro48txBBJAWGv1jRcbMgoZNEL4xbceJNSg314ZLmvgzYAMa3RtCxcKMo41EKeLbikt3Oe3Tim92/mbIAGkggASTHqYtnj1jVKsPGtyrntXXHfbxnJ8owj7W+QHBd7usJWY2Gnu608mcV99pwqj/ALn8vMtDsRpbw9Lw8aS2sjUpWL+8m3Oa+cn8ioO73R7dY1ieoZC3qqsWRb91y/E0r2LhXwh7S+ynNbu7AAGAAAAAAAAAAAAAAAAAAA4DvW7FfWFCyqIb5tEGuFdcirr6P9Jc3H3tePLjO7btnwcOm5ctop8OPdPlt/czb6ex/AvIq7vN7uPpLnn4UV9Ie8rsdbJXvxsr8p+a8ff1Etl3HXyRjuVT2M7wJ4+2JncUqovgjc0/SUtPbgtXVpdPNFp03QshGyuUbK5LeMoNSjJeaZLoxymXhmSY7jcKZAjcjcDIjcjc12t61j4VXpsixQXPhiudlj+7CPizWPblZMKq53WzjXVXFynOT2UUioNa1PI1/PqxceEljqbVFb3W/hLIt8lt8ly6vnGoajndoMqOLTW40p8UKE/Ugt//AHZE/wCkui3fW5OxPZCnS6OGO1uTYl6a9rZyf3Ir8GC8F8TdPDPPt9Tw93ZbQKtOxK8WrntvKyxr1rbH9qb/AJLwSS8DbgBIAAAAAAAAAAAAAAAAAAAAAAxe5hJSA5Dtx3fY2pKV0GsbN25XRXq2+Stj4/pdV7ehUsbdT0DI9FOLhCT34Jbzxr196EvP3bPzR+grIz8mabW9O+kQddtKug1s4zjxJhjluzvbzDzEoTksW/8AJ2ySjJ/mT6P47M6nbxXR+PgVbr/drPic8WNkE/xVilKP6s+q+O5ooaPrWL6tdedCK/ISscfgkzNPWct9rv4Ty6hqFGNHjvurpj5zkk37l4/Ap2S16z1X9Zte13RX8iMbsPqF8uK6FkN+srFOyf8AXxGi8v8AI6XtB3nxSlXhV8T6fSL1tFe2Ffj75be41/Z3sJqGr2rLy7LKaZ7b33re2yPlTW+i8m9lz5JnSdmOx1GLKNjx55F0WmrL4bqL84w22Xv6+0sGi+x9YyXvRrztt8vr2f0DG0+lUY1arjycpPnOyX3py8WbM8tc5+TPvFsDMAAAAAAAAAAAAAAAAAAAAAAAAAACGiQBhwDgMwBhwDgMwBhwEqJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z" alt="로그인 배경이미지">   
+        </div>
+        <!--로그인 정보 영역-->
+        <div class="login-info">
+            <input type="text">
+            <input type="password">
+            <button>로그인</button>
+        </div>       
+    </div>
+ 
+</body>
+</html>

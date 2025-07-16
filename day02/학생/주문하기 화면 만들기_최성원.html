@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+    .wrap {
+        width: 400px;
+        height: 750px;
+        border: 1px solid black;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .img {
+        width: 100%;
+        height: 300px;
+    }
+    .img img {
+        width: 80%;
+        height: 90%;
+        padding-left: 11.5%;
+        padding-top: 6%;
+    }
+    .order {
+        padding-left: 15.5%;
+    }
+    .order fieldset {
+        width: 80%;
+        margin-bottom: 5%;
+        border: 1px solid black;
+        padding: 30px 15px 15px 15px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .order legend {
+        display: block;
+        padding: 0 10px;
+        margin-left: 10px;
+        position: absolute;
+        top: -15px;
+        left: 15px;
+        background-color: white; 
+        box-sizing: border-box;
+    }
+    .order label,
+    .order input,
+    .order select {
+        display: block;
+        width: 90%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="wrap">
+    <div class="img">
+        <img
+        src="https://secure.j-bus.co.jp/busrepo/wp-content/uploads/2021/11/image4-2-1024x554.jpg"
+        alt="온천"
+        />
+    </div>
+    <div class="order">
+        <h2>온천에 온 걸 환영합니다.</h2>
+        <p>가격 : 10만원 / 하루 숙박</p>
+        <fieldset>
+        <legend>주문 내역</legend>
+        <label>주문자이름
+            <input type="text" />
+        </label>
+        <label>수량
+            <select>
+            <option>수량을 선택</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            </select>
+        </label>
+        <label>주문자금액
+            <input type="text" />
+        </label>
+        <label>전화번호
+            <input type="text" />
+        </label>
+        <button>주문합니다</button>
+        </fieldset>
+    </div>
+    </div>
+    </body>
+    </html>

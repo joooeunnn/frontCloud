@@ -1,0 +1,2 @@
+코드 작성 중 미완성 글(인라인 자동완성) 제안을 보이지 않게 하려면 editor.inlineSuggest.enabled 설정을 끄세요.
+@id:editor.inlineSuggest.enabled

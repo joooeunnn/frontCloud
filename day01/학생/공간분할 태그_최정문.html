@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            border: 1px solid red;
+            width: 600px;
+            padding: 10px;
+        }
+        .first {
+            width: 600px;
+            height: 120px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .second {
+            width: 600px;
+            height: 120px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .third {
+            width: 600px;
+            height: 120px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .wrap h2 {
+            padding-top: 1px;
+            margin: 10px;
+            font-size: 1em;
+        }
+        .wrap p {
+            margin: 10px;
+            font-size: 0.3em;
+            line-height: 1em;
+        }
+
+        table{
+            margin: 20px;
+            border: 1px solid black;
+            width: 90%;
+            height: 50px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>공간분할 태그 (그룹짓기)</h1>
+
+    <div class="wrap">
+        <div class="first">
+            <h2>who am I?</h2>
+            <p>최정문:일본학과 경영학과 정보시스템과 졸업</p>
+            <p>프로그래밍 묻지마요... 나도 모름...</p>
+            <p><mark>백엔드든 프론트든</mark> 돌아가면 장땡임...</p>
+        </div>
+        <div class="second">
+            <ul>
+                <li>php</li>
+                <li>VBA</li>
+                <li>회사에서 하라는거 했음.</li>
+            </ul>
+        </div>
+        <div class="third">
+            <h2>학력사항</h2>
+            <table>
+            <tr>
+                <td>한국 모대학</td>
+                <td>일본학과</td>
+                <td>경영학과</td>
+            </tr>
+            <tr>
+                <td>일본 모전문대학</td>
+                <td colspan="2">정보시스템개발과</td>
+            </tr>
+        </table>
+        </div>
+    </div>    
+</body>
+</html>

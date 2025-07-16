@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 클래스 선택자를 이용해서 원하는 영역을 선택하기 
+        
+        1) 태그에 class 명 지정함
+        2) 특정 class 명을 가진 요소를 선택함
+        3) css 스타일 적용
+
+        
+        */
+
+        .wrap{
+            width: 400px;
+            /* height: 400px; */
+            border: 1px solid black;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .image{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        
+        .login-info{
+            width: 300px;
+            padding: 20px;
+            border: 1px solid rgb(255, 0, 0);
+            margin: 50px auto;
+        }
+
+        .login-info input{
+
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .login-info button{
+
+            width: 100%;
+            padding: 10px;
+        }
+
+        .image img{
+            width: 100%;
+        }
+
+/* 테두리를 기준으로 안쪾으로 페딩 바깥쪽 마진 */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 이미지 영역 -->
+         <div class="image">
+            <img src="https://d2afncas1tel3t.cloudfront.net/wp-content/uploads/2024/12/%EB%B6%80%EB%93%9C%EB%9F%AC%EC%9A%B4%ED%9B%84%EB%A0%88%EC%89%AC%ED%81%AC%EB%A6%BC%EB%B9%B5-%EC%8D%B8%EB%84%AC3.jpg" alt="로그인 배경이미지">
+         </div>
+        <!-- 로그인 정보 -->
+         <div class="login-info">
+            <input type="text">
+            <input type="password">
+            <button>로그인</button>
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+    .fir{
+        width: 600px;
+        height: 600px;
+        border: 1px solid black;
+    }
+    .sec{
+        width: 600px;
+        height: 215px;
+        border: 1px solid black;
+    }
+    .sec h1{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .sec p{
+        margin-left: 20px;
+    }
+
+    .thd{
+        width: 600px;
+        height: 170px;
+        border: 1px solid black;
+    }
+    .thd ul{
+        margin: 40px;
+    }
+    .fth{
+        width: 600px;
+        height: 215px;
+        border: 1px solid black;
+    }
+    .fth h1{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .fth table{
+        border-collapse: separate;  /* 셀 사이 간격을 둠 */
+        border-spacing: 3px;        /* 셀 사이 간격 조절 */
+        border: 1px solid black;
+        margin-left: 20px;
+    }
+    .fth td{
+        border: 1px solid black;
+        padding: 1px;
+        width: 125px;
+        height: 20px;
+    }
+   </style>
+</head>
+<body>
+    <h1>공간분할 태그(그룹 짓기)</h1>
+    <div class="fir">
+        <div class="sec">
+            <h1>Who am I?</h1>
+            <p>홍윤성 :기계공학과를 전공하였고, 현재는 개발자가 되기로
+                마음 먹었습니다. 아직 프로그래밍을 많이 접해보지 않아서 잘은 
+                모르겠으나
+                <mark>백엔드개발</mark>에 관심이 좀 더 있습니다.
+            </p>
+        </div>
+        <div class="thd">
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+        </div>
+        <div class="fth">
+            <h1>학력사항</h1>
+             <table>
+                <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                </tr>
+                <tr>
+                <td>d</td>
+                <td>d</td>
+                <td>d</td>
+                <td>d</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
